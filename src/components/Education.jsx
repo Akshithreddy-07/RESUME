@@ -1,18 +1,26 @@
 function Education() {
   const education = [
     {
-      year: "2024 - Present",
+      year: "2025 - 2029",
       degree: "Bachelor of Technology",
-      institution: "Your College Name",
+      institution: "KLH UNIVERSITY",
       description:
-        "Currently pursuing a B.Tech degree with a focus on technology, software development, and emerging technologies."
+        "Currently pursuing a B.Tech degree in ECE with a focus on technology, software development, and emerging technologies."
     },
     {
-      year: "2022 - 2024",
+      year: "2023 - 2025",
       degree: "Intermediate",
-      institution: "Your School / College Name",
+      institution: "NARAYANA JUNIOR COLLEGE",
+      CGPA: "Percentage: 96.5% ",
       description:
         "Completed higher secondary education with a focus on mathematics and science."
+    },
+    {
+        year: "2022 - 2023",
+      degree: "ssc ",
+      institution: "NAVEENA MONTY SCHOOL",
+      CGPA: "CGPA: 9.5 ",
+      description:"completed 10th class with a wonderfull results."
     }
   ];
 
@@ -32,6 +40,7 @@ function Education() {
               <span>{item.year}</span>
               <h3>{item.degree}</h3>
               <h4>{item.institution}</h4>
+              <h4>{item.CGPA}</h4>
               <p>{item.description}</p>
             </div>
           </div>

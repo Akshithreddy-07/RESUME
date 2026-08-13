@@ -5,7 +5,7 @@ function Hero() {
         <p className="hero-greeting">Hi, I'm</p>
 
         <h1>
-          Your Name <span>👋</span>
+          AKSHITH <span>👋</span>
         </h1>
 
         <h2>Full Stack Developer & AI/ML Enthusiast</h2>
@@ -26,11 +26,11 @@ function Hero() {
         </div>
 
         <div className="social-links">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Akshithreddy-07" target="_blank" rel="noreferrer">
             GitHub
           </a>
 
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/g-akshith-reddy-401522375/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
         </div>

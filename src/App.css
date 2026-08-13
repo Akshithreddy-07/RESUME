@@ -196,7 +196,7 @@ nav {
 }
 
 .section-title p {
-  color: #38bdf8;
+  color: aqua;
   font-size: 16px;
   margin-bottom: 8px;
 }
@@ -731,4 +731,316 @@ nav {
   .contact-container {
     grid-template-columns: 1fr;
   }
+}
+/* ============================= */
+/* Cherry Blossom Background     */
+/* ============================= */
+
+.cherry-blossoms {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.petal {
+  position: absolute;
+
+  left: var(--left);
+  top: var(--top);
+
+  width: var(--size);
+  height: calc(var(--size) * 0.7);
+
+  background: #f9a8d4;
+
+  border-radius: 100% 0 100% 0;
+
+  opacity: 0.65;
+
+  transform: rotate(var(--rotation));
+
+  animation: cherry-wind var(--duration) linear var(--delay) infinite;
+}
+
+@keyframes cherry-wind {
+
+  0% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  20% {
+    transform:
+      translate3d(calc(var(--wind) * 0.25), 15vh, 0)
+      rotate(90deg);
+  }
+
+  40% {
+    transform:
+      translate3d(calc(var(--wind) * 0.5), 30vh, 0)
+      rotate(180deg);
+  }
+
+  60% {
+    transform:
+      translate3d(calc(var(--wind) * 0.75), 45vh, 0)
+      rotate(270deg);
+  }
+
+  80% {
+    transform:
+      translate3d(var(--wind), 60vh, 0)
+      rotate(330deg);
+  }
+
+  100% {
+    transform:
+      translate3d(calc(var(--wind) * 1.2), 80vh, 0)
+      rotate(360deg);
+  }
+}
+/* ========================= */
+/* Sakura Mode               */
+/* ========================= */
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg) scale(1.15);
+}
+
+/* Sakura background */
+
+body.sakura-mode {
+  background: #fff7fb;
+  color: #3b2633;
+}
+
+/* Sections */
+
+body.sakura-mode .hero {
+  background: #fff7fb;
+}
+
+body.sakura-mode .about,
+body.sakura-mode .projects,
+body.sakura-mode .certifications {
+  background: #fff1f7;
+}
+
+body.sakura-mode .skills,
+body.sakura-mode .education,
+body.sakura-mode .contact {
+  background: #fff7fb;
+}
+body.sakura-mode h1,
+body.sakura-mode h2,
+body.sakura-mode h3,
+body.sakura-mode h4 {
+  color: #3b2633;
+}
+
+body.sakura-mode p {
+  color: #6b4b5a;
+}
+
+body.sakura-mode .nav-links a {
+  color: #4a3040;
+}
+
+body.sakura-mode .nav-links a:hover {
+  color: #d9468a;
+}
+body.sakura-mode .project-card,
+body.sakura-mode .timeline-content,
+body.sakura-mode .certificate-card,
+body.sakura-mode .contact-form {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: #f3c4d8;
+  color: #3b2633;
+}
+body.sakura-mode .project-card p,
+body.sakura-mode .timeline-content p,
+body.sakura-mode .certificate-card p,
+body.sakura-mode .contact-info > p {
+  color: #6b4b5a;
+}
+/* ========================= */
+/* Sakura Mode - Text Fixes  */
+/* ========================= */
+
+body.sakura-mode {
+  color: #3b2633;
+}
+
+/* Navbar */
+body.sakura-mode nav {
+  background: rgba(255, 247, 251, 0.92);
+  border-bottom-color: #f3c4d8;
+}
+
+body.sakura-mode .logo {
+  color: #d9468a;
+}
+
+body.sakura-mode .nav-links a {
+  color: #4a3040;
+}
+
+body.sakura-mode .nav-links a:hover {
+  color: #d9468a;
+}
+
+/* Headings */
+body.sakura-mode h1,
+body.sakura-mode h2,
+body.sakura-mode h3,
+body.sakura-mode h4,
+body.sakura-mode h5,
+body.sakura-mode h6 {
+  color: #3b2633;
+}
+
+/* Normal text */
+body.sakura-mode p {
+  color: #6b4b5a;
+}
+
+/* Section small headings */
+body.sakura-mode .section-title p {
+  color: #d9468a;
+}
+
+/* Hero */
+body.sakura-mode .hero h1 {
+  color: #3b2633;
+}
+
+body.sakura-mode .hero h2 {
+  color: #6b4b5a;
+}
+
+body.sakura-mode .hero p {
+  color: #6b4b5a;
+}
+
+/* About */
+body.sakura-mode .about p {
+  color: #6b4b5a;
+}
+
+/* Skills */
+body.sakura-mode .skill-card,
+body.sakura-mode .skill-category {
+  color: #3b2633;
+}
+
+body.sakura-mode .skill-card p,
+body.sakura-mode .skill-category p {
+  color: #6b4b5a;
+}
+
+/* Projects */
+body.sakura-mode .project-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #f3c4d8;
+}
+
+body.sakura-mode .project-card h3 {
+  color: #3b2633;
+}
+
+body.sakura-mode .project-card p {
+  color: #6b4b5a;
+}
+
+/* Education */
+body.sakura-mode .timeline-content {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #f3c4d8;
+}
+
+body.sakura-mode .timeline-content h3 {
+  color: #3b2633;
+}
+
+body.sakura-mode .timeline-content h4 {
+  color: #6b4b5a;
+}
+
+body.sakura-mode .timeline-content p {
+  color: #6b4b5a;
+}
+
+/* Certifications */
+body.sakura-mode .certificate-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #f3c4d8;
+}
+
+body.sakura-mode .certificate-card h3 {
+  color: #3b2633;
+}
+
+body.sakura-mode .certificate-card h4 {
+  color: #6b4b5a;
+}
+
+body.sakura-mode .certificate-card p {
+  color: #6b4b5a;
+}
+
+/* Contact */
+body.sakura-mode .contact-info h3 {
+  color: #3b2633;
+}
+
+body.sakura-mode .contact-info p {
+  color: #6b4b5a;
+}
+
+body.sakura-mode .contact-details h4 {
+  color: #3b2633;
+}
+
+body.sakura-mode .contact-details p {
+  color: #6b4b5a;
+}
+
+body.sakura-mode .contact-form {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #f3c4d8;
+}
+
+body.sakura-mode .form-group label {
+  color: #4a3040;
+}
+
+body.sakura-mode .form-group input,
+body.sakura-mode .form-group textarea {
+  background: #fffafd;
+  color: #3b2633;
+  border-color: #e8b8cd;
+}
+
+body.sakura-mode .form-group input::placeholder,
+body.sakura-mode .form-group textarea::placeholder {
+  color: #9b7888;
 }

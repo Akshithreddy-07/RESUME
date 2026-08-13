@@ -10,7 +10,7 @@ function Projects() {
       description:
         "A therapy appointment platform that allows patients to find doctors, book appointments, and manage their sessions.",
       technologies: ["React", "Node.js", "MongoDB"],
-      github: "#",
+      github: "https://github.com/Akshithreddy-07/THERAMEET",
       demo: "#"
     },
     {

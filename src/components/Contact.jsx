@@ -51,7 +51,7 @@ function Contact() {
               <span>📧</span>
               <div>
                 <h4>Email</h4>
-                <p>your-email@example.com</p>
+                <p>gangidipullareddy@gmail.com</p>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ function Contact() {
               <span>💼</span>
               <div>
                 <h4>LinkedIn</h4>
-                <p>linkedin.com/in/your-profile</p>
+                <p>https://www.linkedin.com/in/g-akshith-reddy-401522375/</p>
               </div>
             </div>
           </div>
