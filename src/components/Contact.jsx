@@ -19,7 +19,9 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("Contact form submitted:", formData);
+    const subject = encodeURIComponent(`Portfolio message from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\nReply to: ${formData.email}`);
+    window.location.href = `mailto:gangidipullareddy@gmail.com?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
 
@@ -51,7 +53,7 @@ function Contact() {
               <span>📧</span>
               <div>
                 <h4>Email</h4>
-                <p>gangidipullareddy@gmail.com</p>
+                <p><a href="mailto:gangidipullareddy@gmail.com">gangidipullareddy@gmail.com</a></p>
               </div>
             </div>
 
@@ -67,7 +69,7 @@ function Contact() {
               <span>💼</span>
               <div>
                 <h4>LinkedIn</h4>
-                <p>https://www.linkedin.com/in/g-akshith-reddy-401522375/</p>
+                <p><a href="https://www.linkedin.com/in/g-akshith-reddy-401522375/" target="_blank" rel="noreferrer">LinkedIn Profile ↗</a></p>
               </div>
             </div>
           </div>
@@ -119,7 +121,7 @@ function Contact() {
 
           {submitted && (
             <p className="success-message">
-              ✓ Message submitted successfully!
+              Your email app will open with the message ready to send.
             </p>
           )}
         </form>

@@ -160,6 +160,17 @@ nav {
   font-size: 80px;
   color: #38bdf8;
   box-shadow: 0 0 50px rgba(56, 189, 248, 0.2);
+  overflow: hidden;
+  padding: 7px;
+}
+
+.hero-circle img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
@@ -1043,4 +1054,72 @@ body.sakura-mode .form-group textarea {
 body.sakura-mode .form-group input::placeholder,
 body.sakura-mode .form-group textarea::placeholder {
   color: #9b7888;
+}
+.contact-details a { color: inherit; text-decoration: none; }
+.contact-details a:hover { color: #38bdf8; }
+
+
+/* Certificate gallery */
+.certifications-container {
+  max-width: 1180px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 16px;
+  min-width: 0;
+}
+
+.certificate-preview {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #1e293b;
+  aspect-ratio: 4 / 3;
+}
+
+.certificate-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #f8fafc;
+  transition: transform 0.3s ease;
+}
+
+.certificate-preview:hover img {
+  transform: scale(1.035);
+}
+
+.certificate-view {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.88);
+  color: #38bdf8;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.certificate-details h3 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.certificate-details h4 {
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.certificate-details p {
+  color: #94a3b8;
+  line-height: 1.6;
 }

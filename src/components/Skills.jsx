@@ -6,9 +6,9 @@ function Skills() {
       skills: ["Java", "Python", "JavaScript", "C"]
     },
     {
-      title: "Web Development",
+      title: "Full-Stack Development",
       icon: "🌐",
-      skills: ["HTML", "CSS", "React", "Node.js"]
+      skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Frontend", "Backend", "MongoDB"]
     },
     {
       title: "AI & Machine Learning",

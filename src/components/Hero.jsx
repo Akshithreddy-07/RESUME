@@ -1,3 +1,5 @@
+import profilePhoto from "../assets/profile-photo.jpg";
+
 function Hero() {
   return (
     <section id="home" className="hero">
@@ -38,7 +40,7 @@ function Hero() {
 
       <div className="hero-visual">
         <div className="hero-circle">
-          &lt;/&gt;
+          <img src={profilePhoto} alt="Portrait of Akshith" />
         </div>
       </div>
     </section>
